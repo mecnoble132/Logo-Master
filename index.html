@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/Logomasterfavicon.png">
+
+</head>
+<body>
+    <div class="hero">
+        <header>
+            <a href="#"><img src="images/Logomasterlogo.png" alt="Logo"></a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#my-works">My Works</a>
+                <a href="#hire">Hire Me</a>
+                <a href="#about-me">About Me</a>
+            </nav>
+        </header>
+
+        <div class="hero-text">
+            <h1>Logo Designer</h1>
+        </div>
+        <div class="cta">
+            <a href="#hire"><button>Hire Me</button></a>
+        </div>
+    </div>
+
+    <div class="my-works" id="my-works">
+        <h2>My Works</h2>
+        <div class="work-container">
+            <div class="work-card">
+                <div class="img-container dark-img-container"><img src="images/electrowizardslogo.png" alt="logo"></div>
+                <div class="work-p">
+                    <p>Electro Wizards</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="img-container"><img src="images/playerbuylogo.png" alt="logo"></div>
+                <div class="work-p">
+                    <p>PlayerBuy</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="img-container"><img src="images/Logomasterlogo.png" alt="logo"></div>
+                <div class="work-p">
+                    <p>Logo Master</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-request" id="hire">
+        <h2>Hire Me</h2>
+        <form>
+            <label for="topic">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="topic">Logo Topic:</label>
+            <input type="text" id="topic" name="topic" required><br><br>
+
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="extra-info">Additional Information:</label><br>
+            <textarea id="extra-info" name="extra-info" rows="4" cols="50"></textarea><br><br>
+
+            <label for="images">Upload Images (if any):</label>
+            <input type="file" id="images" name="images" accept="image/*"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <div class="about" id="about-me">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="images/clement.jpg" alt="clement">
+            <div class="about-info-container">
+                <h3>Hey There!</h3><img src="images/handwave.png" alt="hello">
+                <p class="clement">I am Clement.</p>
+                <div class="about-info">
+                    <p>I am a 7th grade student from Kerala, India. 
+                        I can make logos for you. I use Canva and Adobe Express to make logos. 
+                        I do this for getting some pocket money.
+                    </p>
+                    <br>
+                    <p>
+                        I code this website myself for this simple business. I showcase my work here. You can see it in <a href="#my-works">my works section</a> (you cannot reach this part without seeing that, by the way).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/Logomasterlogo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#my-works">My Works</a>
+                <a href="#hire">Hire Me</a>
+                <a href="#about-me">About Me</a>
+            </div>
+            <div class="footer-email">
+                <a href="mailto:mecnoble132@gmail.com">mecnoble132@gmail.com</a>
+            </div>
+        </div>
+        <p class="footer-text">© 2023 Logo Master. All Rights Reserved.</p>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/78b784c0da.js" crossorigin="anonymous"></script>
+</body>
+</html>

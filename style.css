@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E6F4F1;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*---------Header----------*/
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(images/hero-image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    transition: all 0.5s;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+header img{
+    width: 150px;
+    opacity: 1;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+nav a:hover{
+    font-size: 18px;
+    color: #4a8cb8;
+    opacity: 1;
+}
+.hero-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    text-align: center;
+}
+.cta{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.cta button{
+    background-color: #4a8cb8;
+    border: none;
+    padding: 20px 50px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.cta button:hover{
+    padding: 20px 100px;
+}
+.my-works{
+    padding: 20px;
+}
+.my-works h2{
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 30px;
+    color: #4a8cb8;
+}
+.work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.work-card{
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.work-card:hover{
+    transform: scale(1.05);
+}
+.work-card p{
+    text-align: center;
+}
+.work-p{
+    background-color: #4a8cb8;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+}
+.work-card img{
+    width: 200px;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.dark-img-container{
+    background-color: black;
+}
+
+/* Add these styles to your existing CSS file or create a new one */
+
+.logo-request {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-request h2 {
+    font-size: 24px;
+    color: #4a8cb8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-request form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo-request form input[type="text"],
+.logo-request form input[type="email"],
+.logo-request form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-request form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.logo-request form input[type="file"] {
+    margin-top: 10px;
+}
+
+.logo-request form input[type="submit"] {
+    background-color: #4a8cb8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.logo-request form input[type="submit"]:hover {
+    background-color: #357dab;
+}
+
+.about{
+    border-radius: 30px;
+}
+
+.about h2{
+    text-align: center;
+    color: #4a8cb8;
+    font-size: 35px;
+}
+.about-container{
+    background-color: #ffffff;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 300px 0 0;
+    border-radius: 30px;
+}
+.about-container img{
+    width: 400px;
+    border-radius: 30px 0 0 30px;
+}
+.about-info-container{
+    padding: 50px;
+}
+.about-info-container h3{
+    font-size: 30px;
+}
+.clement{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.about-info-container img{
+    width: 50px;
+}
+.about-info-container a{
+    color: #4a8cb8;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    background-color: #4a8cb8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.footer-links a:hover {
+    font-size: 18px;
+    color: #E6F4F1;
+}
+
+.footer-email a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-email a:hover {
+    color: #E6F4F1;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
