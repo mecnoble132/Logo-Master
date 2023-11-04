@@ -10,3 +10,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector("#navLinks");
+
+    menuToggle.addEventListener("click", function() {
+        menuToggle.classList.toggle("active1");
+        menuToggle.classList.toggle("active2");
+        menuToggle.classList.toggle("active3");
+        navLinks.classList.toggle("active");
+    });
+
+    const links = document.querySelectorAll(".nav-links a");
+    links.forEach(link => {
+        link.addEventListener("click", function() {
+            menuToggle.classList.remove("active1", "active2", "active3");
+            navLinks.classList.remove("active");
+        });
+    });
+});

@@ -12,16 +12,23 @@
     <div class="hero">
         <header>
             <a href="#"><img src="images/Logomasterlogo.png" alt="Logo"></a>
-            <nav>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-links" id="navLinks">
                 <a href="#">Home</a>
                 <a href="#my-works">My Works</a>
                 <a href="#hire">Hire Me</a>
+                <a href="#pricing">Pricing</a>
                 <a href="#about-me">About Me</a>
             </nav>
+            
         </header>
 
         <div class="hero-text">
-            <h1>Logo Designer</h1>
+            <h1 class="unselectable">Logo Designer</h1>
         </div>
         <div class="cta">
             <a href="#hire"><button>Hire Me</button></a>
@@ -54,7 +61,10 @@
 
     <div class="logo-request" id="hire">
         <h2>Hire Me</h2>
-        <form>
+        <form 
+            action="https://formspree.io/f/xleyvnyv"
+            method="POST"
+            enctype="multipart/form-data">
             <label for="topic">E-mail:</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="topic">Logo Topic:</label>
@@ -63,9 +73,6 @@
             <label for="description">Description:</label><br>
             <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
 
-            <label for="extra-info">Additional Information:</label><br>
-            <textarea id="extra-info" name="extra-info" rows="4" cols="50"></textarea><br><br>
-
             <label for="images">Upload Images (if any):</label>
             <input type="file" id="images" name="images" accept="image/*"><br><br>
 
@@ -73,13 +80,28 @@
         </form>
     </div>
 
+    <div class="pricing" id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-container">
+            <p>The price varies according to the difficulty of making the logo.</p>
+            <div class="price-container">
+                <div class="price" id="min-price">
+                    <h4>Min Price: 9 USD</h4>
+                </div>
+                <div class="price" id="max-price">
+                    <h4>Max Price: 13 USD</h4>
+                </div>
+            </div>
+            <p>Average cost at other places for a logo design is 16 USD.</p>
+        </div>
+    </div>
 
     <div class="about" id="about-me">
         <h2>About Me</h2>
         <div class="about-container">
             <img src="images/clement.jpg" alt="clement">
             <div class="about-info-container">
-                <h3>Hey There!</h3><img src="images/handwave.png" alt="hello">
+                <h3>Hai There!</h3><img src="images/handwave.png" alt="hello">
                 <p class="clement">I am Clement.</p>
                 <div class="about-info">
                     <p>I am a 7th grade student from Kerala, India. 
@@ -88,7 +110,7 @@
                     </p>
                     <br>
                     <p>
-                        I code this website myself for this simple business. I showcase my work here. You can see it in <a href="#my-works">my works section</a> (you cannot reach this part without seeing that, by the way).
+                        I code this website myself for this simple business. I showcase my work here. You can see it in <a href="#my-works">my works section</a> (you cannot reach this part without seeing my works, by the way).
                     </p>
                 </div>
             </div>

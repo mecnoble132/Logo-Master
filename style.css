@@ -10,6 +10,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.unselectable{
+    user-select: none;
+}
 /*---------Header----------*/
 .hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(images/hero-image.jpg);
@@ -267,4 +270,179 @@ footer {
 .footer-text {
     margin-top: 10px;
     font-size: 14px;
+}
+
+.pricing h2{
+    text-align: center;
+    color: #4a8cb8;
+    font-size: 35px;
+}
+.pricing-container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+.pricing-container p{
+    font-size: 20px;
+    margin: 30px 0;
+    text-align: center;
+}
+.price-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.price{
+    background-color: #4a8cb8;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.price h4{
+    color: white;
+}
+
+.menu-toggle {
+    display: none; /* Initially hide the hamburger icon */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+    opacity: 1;
+}
+
+/* Add a media query to hide/show the hamburger icon based on screen size */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none; /* Initially hide the links */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when menu is active */
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .nav-links.active a {
+        margin: 5px 0;
+    }
+
+    .bar.active1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .bar.active2 {
+        opacity: 0;
+    }
+
+    .bar.active3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 60px; /* Adjust font size for mobile */
+    }
+    .cta {
+        top: 80%; /* Adjust position for mobile */
+    }
+    .cta button {
+        padding: 15px 30px; /* Adjust button size for mobile */
+    }
+}
+@media (max-width: 768px) {
+    .work-container {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+        gap: 10px; /* Adjust gap between work cards */
+    }
+    .work-card img {
+        width: 100%; /* Make images fill the container */
+    }
+    .work-p {
+        padding: 10px; /* Add padding to work card text */
+    }
+}
+@media (max-width: 768px) {
+    .logo-request form label,
+    .logo-request form input,
+    .logo-request form textarea {
+        width: 100%; /* Make form elements fill the container */
+    }
+    .logo-request form textarea {
+        height: 80px; /* Adjust height for mobile */
+    }
+    .logo-request form input[type="submit"] {
+        padding: 12px 24px; /* Adjust button size for mobile */
+    }
+}
+@media (max-width: 768px) {
+    .price-container {
+        flex-direction: column; /* Stack prices in a single column */
+        align-items: center; /* Center items */
+    }
+    .price {
+        margin-bottom: 20px; /* Add space between prices */
+    }
+}
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column-reverse; /* Reverse order for image and text */
+        align-items: center; /* Center items */
+        padding: 0;
+    }
+    .about-info-container {
+        text-align: center; /* Center text */
+        padding: 20px; /* Add padding */
+    }
+    .about-info-container h3 {
+        font-size: 24px; /* Adjust heading size */
+    }
+    .clement {
+        font-size: 20px; /* Adjust font size */
+        margin: 10px 0;
+    }
+    .about-info-container img {
+        width: 30px; /* Adjust image size */
+        border-radius: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items in a single column */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+    .footer-links a,
+    .footer-email a {
+        margin: 10px 0; /* Add space between links */
+    }
 }
